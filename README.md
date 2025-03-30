@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# React 3x3 Grid Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a simple **3x3 grid** where:
+- Clicking on a box changes its color to **green**.
+- Clicking on the last box triggers a **sequence animation**, turning all clicked boxes **orange** in the order they were clicked.
 
-## Available Scripts
+## Features
+- **Interactive UI**: Click to change box colors.
+- **State Management**: Uses React's `useState` to track colors and click order.
+- **Animation**: A sequence-based color change after the last box is clicked.
 
-In the project directory, you can run:
+## Installation & Setup
+### Prerequisites
+Ensure you have **Node.js** and **npm** installed.
 
-### `npm start`
+### Steps to Run
+1. **Clone the Repository**
+   ```sh
+   git clone (https://github.com/guntojushiv/Color-click-grid.git)
+   cd color-click-grid
+   ```
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+3. **Start the Development Server**
+   ```sh
+   npm start
+   ```
+   The app runs at **http://localhost:3000/**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
+To deploy the project to GitHub Pages:
+1. Add the following to `package.json`:
+   ```json
+   "homepage": "(https://github.com/guntojushiv/Color-click-grid.git)"
+   ```
+2. Install `gh-pages`:
+   ```sh
+   npm install gh-pages --save-dev
+   ```
+3. Add deploy scripts in `package.json`:
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+4. Deploy:
+   ```sh
+   npm run deploy
+   ```
+The project will be live at:  
+**https://your-username.github.io/color-click-grid**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- **React.js** for UI rendering
+- **JavaScript (ES6)** for logic
+- **CSS (Inline Styling)** for styling
+- **GitHub Pages** for deployment
 
-### `npm test`
+## Folder Structure
+```
+color-click-grid/
+├── src/
+│   ├── components/
+│   │   ├── Grid.js  (Main Grid Component)
+│   ├── App.js  (Main App Component)
+│   ├── index.js  (Entry Point)
+├── public/
+├── package.json
+├── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Future Enhancements
+- Add sound effects on click.
+- Use **CSS animations** for a smoother transition.
+- Make the grid size configurable.
 
-### `npm run build`
+## Author
+**Your Name**  
+GitHub: (https://github.com/guntojushiv/)
+LinkedIn: (https://www.linkedin.com/in/shiva-guntoju-944144241/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+**Happy Coding! 🚀**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
