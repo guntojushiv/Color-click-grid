@@ -52,7 +52,7 @@ To deploy the project to GitHub Pages:
    npm run deploy
    ```
 The project will be live at:  
-**https://your-username.github.io/color-click-grid**
+**(https://color-click-grid.vercel.app/)**
 
 ## Technologies Used
 - **React.js** for UI rendering
